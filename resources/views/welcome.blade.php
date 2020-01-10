@@ -81,7 +81,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Laravel
+                    Flowers by Dashs
                 </div>
 
                 <div class="links">
