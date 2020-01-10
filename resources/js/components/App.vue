@@ -1,74 +1,37 @@
 <template>
 
-    <nav class="header-menu">
+    <div class="main-container">
 
-        <ul class="header-menu__list">
+        <header-element></header-element>
 
-            <li class="header-menu__item">
-                <a href="#">Menu item 1</a>
-            </li>
+        <welcome-section></welcome-section>
 
-            <li class="header-menu__item">
-                <a href="#">Menu item 2</a>
-            </li>
+        <about-section></about-section>
 
-            <li class="header-menu__item">
-                <a href="#">Menu item 3</a>
-            </li>
-
-        </ul>
-
-    </nav>
+    </div>
 
 </template>
 
 <script>
+
+    import HeaderElement from './elements/HeaderElement';
+    import WelcomeSection from './sections/WelcomeSection';
+    import AboutSection from './sections/AboutSection'
+
     export default {
-        name: "App"
+        name: "App",
+        components: {
+            HeaderElement,
+            WelcomeSection,
+            AboutSection,
+        }
     }
 </script>
 
 <style lang="scss" scoped>
 
-    @import "../../sass/variables";
+    //@import "../../sass/variables";
 
-    nav.header-menu {
-        background-color: greenyellow;
-        height: 50px;
 
-        ul.header-menu__list {
-            margin: 0;
-            padding: 0;
-            height: 100%;
-            width: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-
-            li.header-menu__item {
-                list-style: none;
-                a {
-                    text-decoration: none;
-                    color: black;
-                    &:hover {
-                        color: red;
-                    }
-                }
-            }
-        }
-
-        @media screen and (max-width: $laptopScreen){
-            background-color: yellow;
-        }
-
-        @media screen and (max-width: $tabletScreen){
-            background-color: yellowgreen;
-        }
-
-        @media screen and (max-width: $mobileScreen){
-            background-color: red;
-        }
-
-    }
 
 </style>

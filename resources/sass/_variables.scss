@@ -18,7 +18,14 @@ $green: #38c172;
 $teal: #4dc0b5;
 $cyan: #6cb2eb;
 
-// Mediaqueries
-$laptopScreen: 1366px;
-$tabletScreen: 1024px;
-$mobileScreen: 480px;
+// Media query breakpoints
+$laptopScreenWidth: 1366px;
+$laptopScreenHeight: 1024px;
+$tabletScreenWidth: 1280px;
+$tabletScreenHeight: 800px;
+$mobileScreenWidth: 853px;
+$mobileScreenHeight: 480px;
+
+// Sizes
+// --- Header sizes ---
+$headerHeight: 50px;

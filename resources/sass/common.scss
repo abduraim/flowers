@@ -1,3 +1,74 @@
 * {
     font-family: $font-family-sans-serif;
+    box-sizing: border-box;
+}
+
+.wrapper {
+
+    width: 60%;
+    height: 100%;
+    outline: 1px solid #000;
+    background-color: #fff;
+
+    @include laptop-landscape {
+        width: 960px;
+        background-color: pink;
+    }
+
+    @include laptop-portrait {
+        width: 100%;
+        margin: 0 50px;
+        background-color: deeppink;
+    }
+
+    @include tablet-landscape {
+        width: 100%;
+        margin: 0 50px;
+        background-color: aquamarine;
+    }
+
+    @include tablet-portrait {
+        background-color: aqua;
+    }
+
+    @include mobile-landscape {
+        margin: 0 20px;
+        background-color: #ffed4a;
+    }
+
+    @include mobile-portrait {
+        margin: 0 20px;
+        background-color: #f6993f;
+    }
+
+}
+
+section {
+
+    width: 100%;
+    height: 100vh;
+
+
+    padding-top: calc(#{$headerHeight} + 50px);
+    padding-bottom: 50px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @include landscape {
+        padding-top: 50px;
+        padding-left: $headerHeight;
+    }
+
+    @include mobile-landscape {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    @include mobile-portrait {
+        padding-top: calc(#{$headerHeight + 20px});
+        padding-bottom: 20px;
+    }
+
 }
