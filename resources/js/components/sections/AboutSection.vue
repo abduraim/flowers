@@ -1,8 +1,8 @@
 <template>
 
-    <section id="about">
+    <section id="about" class="parallax">
         <div class="wrapper">
-            <p>about screen</p>
+            <h1>About me</h1>
         </div>
     </section>
 
@@ -17,5 +17,15 @@
 <style lang="scss" scoped>
 
     //@import "../../../sass/variables";
+
+    section {
+        background-image: url("/storage/images/backgrounds/flowers02.jpg");
+    }
+
+    .wrapper {
+        background-color: transparent;
+        color: #fff;
+    }
+
 
 </style>

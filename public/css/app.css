@@ -354,15 +354,13 @@ template {
 }
 
 .wrapper {
-  width: 60%;
+  width: 1140px;
   height: 100%;
-  outline: 1px solid #000;
   background-color: #fff;
 }
 
 @media screen and (max-width: 1366px) and (orientation: landscape) {
   .wrapper {
-    width: 960px;
     background-color: pink;
   }
 }
@@ -417,7 +415,7 @@ section {
           align-items: center;
 }
 
-@media screen and (orientation: landscape) {
+@media screen and (max-width: 1280px) and (orientation: landscape) {
   section {
     padding-top: 50px;
     padding-left: 50px;
@@ -436,6 +434,18 @@ section {
     padding-top: calc(70px);
     padding-bottom: 20px;
   }
+}
+
+.parallax {
+  /* The image used */
+  background-image: url("/storage/images/backgrounds/flowers.jpg");
+  /* Set a specific height */
+  height: 100vh;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 

@@ -3,19 +3,14 @@
     <div class="wrapper">
         <nav class="header-menu">
 
-
             <ul class="header-menu__list">
 
                 <li class="header-menu__item">
-                    <a href="#">Menu item 1</a>
+                    <a href="#" v-scroll-to="'#welcome'">Welcome</a>
                 </li>
 
                 <li class="header-menu__item">
-                    <a href="#">Menu item 2</a>
-                </li>
-
-                <li class="header-menu__item">
-                    <a href="#">Menu item 3</a>
+                    <a href="#" v-scroll-to="'#about'">About</a>
                 </li>
 
             </ul>
@@ -43,6 +38,7 @@
         top: 0;
         left: 0;
         background-color: greenyellow;
+        z-index: 100;
 
         ul.header-menu__list {
             margin: 0;
@@ -55,6 +51,7 @@
 
             li.header-menu__item {
                 list-style: none;
+                padding: 10px;
                 a {
                     text-decoration: none;
                     color: black;
@@ -65,7 +62,7 @@
             }
         }
 
-        @include landscape {
+        @include tablet-landscape {
             height: 100%;
             width: $headerHeight;
 

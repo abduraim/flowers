@@ -8,6 +8,8 @@
 
         <about-section></about-section>
 
+        <welcome-section></welcome-section>
+
     </div>
 
 </template>
@@ -31,6 +33,10 @@
 <style lang="scss" scoped>
 
     //@import "../../sass/variables";
+
+
+
+
 
 
 

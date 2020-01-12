@@ -15,7 +15,10 @@
 
 <script>
     export default {
-        name: "welcome"
+        name: "welcome",
+        methods: {
+
+        },
     }
 </script>
 
@@ -24,7 +27,7 @@
     //@import "../../../sass/variables";
 
     section {
-        background-color: #4dc0b5;
+        //background-color: #4dc0b5;
     }
 
 </style>
